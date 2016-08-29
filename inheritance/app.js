@@ -3,6 +3,7 @@ var Events = require('events');
 var util = require('util');
 
 function Greetr(){
+	Events.call(this);
 	this.greeting = 'Hello World';
 }
 
@@ -19,3 +20,5 @@ greetr1.on('greet', function(data){
 })
 
 greetr1.greet('Ericc!!');
+
+
