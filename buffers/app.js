@@ -25,3 +25,18 @@ view[0] = 5;
 view[1] = 15;
 view[2] = 30;
 console.log(view)
+
+function greet(callback){
+	console.log("greet is called");
+
+	data = {
+		name: 'John Doe'
+	}
+	callback(data);
+}
+
+greet(function(data){
+
+	console.log("Hi my name is: " + data.name);
+
+})
