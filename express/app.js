@@ -17,7 +17,7 @@ app.get('/', function(req, res){
 
 app.get('/person/:id', function(req, res){
 
-	res.render('person', {ID: req.params.id});
+	res.render('person', {ID: req.params.id, Qstr: req.query.qstr});
 })
 app.get('/api/:id', function(req, res){
 	res.send('<html><head></head><body><h1>hello'+ req.params.id + '</h1></body></html>')
